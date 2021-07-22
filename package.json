@@ -1,0 +1,24 @@
+{
+  "name": "choice_blend_2",
+  "version": "1.0.0",
+  "description": "Website for the Choice Blend Studio, a recordin and rehearsal studio.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mykey737/choice-blend-site.git"
+  },
+  "author": "Mike Pena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mykey737/choice-blend-site/issues"
+  },
+  "homepage": "https://github.com/Mykey737/choice-blend-site#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
