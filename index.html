@@ -1,8 +1,157 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>This is a Header</h1>
-        <p>This is a paragraph.</p>
-        <p>This is another paragraph.</p>
-    </body>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css" />
+    
+        <title>Choice Blend Studio - Miami's Place To Rehearse, Record, Mix, and Master</title>
+    </head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid hero-section">
+        <div class="row top-bar">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark pt-0">
+                    
+                    <div class="col-lg-3 text-left d-none d-lg-block">
+                        <i class="fas fa-phone-alt fa-sm pr-1"></i> <a class="white" href="tel:3058151515">(305) 815-1515</a>
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                        <button class="navbar-toggler d-lg-none p-0 m-0 mt-1" type="button" onclick="openNav()">
+                        <span><i
+                            class="fas fa-bars fa-lg"></i></span>
+                        </button>
+                    </div>
+                    <div class="col d-none d-xl-block text-right">
+                        <a href="http://facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-lg white"></i></a>
+                        <a href="http://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-lg white"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-lg white"></i></a>
+                        <a href="https://currents.google.com/" target="_blank"><i class="fab fa-google-plus-square fa-lg white"></i></a>
+                    </div>
+                    <div class="col d-xl-none d-sm-block">
+
+                    </div>
+                    <div class="col-8 col-md-6 col-lg-3 dropdown show text-right pr-1 d-md-inline">
+                        <a class="btn btn-link dropdown-toggle white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Translate
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">German</a>
+                            <a class="dropdown-item" href="#">French</a>
+                            <a class="dropdown-item" href="#">Russian</a>
+                            <a class="dropdown-item" href="#">Turkish</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg main-nav">
+                    <div class="nav-item"><a class="navbar-brand p-0 m-0" href="https://vendors.lv1030.com/"><img class="hero-logo m-0" src="images/logo.png"></a></div>
+                    <div class="collapse navbar-collapse" id="famservNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link white" href="#">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/about">ABOUT US</a></li>
+                            <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/services">SERVICES</a></li>
+                            <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/faq">FAQS</a></li>
+                            <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/contact">CONTACT</a></li>
+                            <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/login">LOGIN</a></li>
+                            <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/register">REGISTER</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="famServSideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn btn-ripple text-center" onclick="closeNav()">&times;</a>
+            <hr class="mb-1"/>
+            <ul class="navbar-nav navbar-sidenav pl-5">
+                <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/">HOME</a></li>
+                <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/about">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/services">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/faq">FAQS</a></li>
+                <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/contact">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/login">LOGIN</a></li>
+                <li class="nav-item"><a class="nav-link white" href="https://vendors.lv1030.com/register">REGISTER</a></li>
+            </ul>
+            <hr class="m-0" />
+            <ul class="nav mb-5 mx-3">
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-0" href="http://facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-3x blue"></i></a>
+                </li>
+                <li class="nav-item mx-2 ">
+                    <a class="nav-link px-0" href="http://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-3x blue"></i></a>
+                </li>
+                <li class="nav-item mx-2 ">
+                    <a class="nav-link px-0" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-3x blue"></i></a>
+                </li>
+                <li class="nav-item mx-2 ">
+                    <a class="nav-link px-0" href="https://currents.google.com/" target="_blank"><i class="fab fa-google-plus-square fa-3x blue"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="row d-flex align-items-center pb-5">
+            <div class="col text-center align-self-center pb-5 pt-5">
+                <h1>HOME REPAIR</h1>
+                <h2>Home Repair</h2>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <h2>Discover & Review</h2>
+        <h3>Our Campsites</h3>
+        <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+    </div>
+
+    <div>
+        <h2>Featured Campsites</h2>
+        <h3>React Lake Campground</h3>
+        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+    </div>
+
+    <div>
+        <h2>Our Community Partners</h2>
+        <h3>Bootstrap Outfitters</h3>
+        <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+    </div>
+
+    <footer>
+        <div>
+            <h5>Links</h5>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sites</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Social</h5>
+            <a href="http://instagram.com/">Instagram</a>
+            <a href="http://facebook.com/">Facebook</a>
+            <a href="http://twitter.com/">Twitter</a>
+            <a href="http://youtube.com/">YouTube</a>
+        </div>
+        <div>
+            Tel: 1-206-555-1234<br />
+            Email: campsites@nucamp.co
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
