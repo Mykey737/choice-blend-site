@@ -5,12 +5,11 @@
     background-repeat:no-repeat;
     background-position:center;
     width: 100%;
-    height: auto;
+    height: 27em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border: 1px blue solid;
 }
 
 .container-fluid {
@@ -42,9 +41,7 @@
     font-weight: 600;
 }
 
-
-
-
+  
 
 form input {
     padding-bottom: 2rem;
@@ -76,8 +73,6 @@ footer img {
     height: auto;
 }
 
-
-
 .no-pb {
     height:1px; 
     width:100%; 
@@ -94,8 +89,14 @@ footer img {
     color: white;
 }
 
-.grey {
-    color: #bdbdbd
+.gray {
+    background-color: #9b9b9b;
+    color: white;
+}
+
+.gray:hover {
+    background-color: #9b9b9b;
+    color: white;
 }
 
 .black {
@@ -116,20 +117,6 @@ footer img {
     text-align: center;
 }
 
-.hero-section {
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/homerepairheroimg.png);
-    background-repeat:no-repeat;
-    background-position:center;
-    max-width: 100%;
-    height: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .hero-logo {
     width: 9.5em;
     height: auto;
@@ -137,7 +124,7 @@ footer img {
 }
 
 .top-bar {
-    background-color: #2278cf;
+    background-color: rgb(172, 0, 0);
     color: white;
     max-height: 2.5rem;
     font-size: .85rem;
@@ -164,69 +151,57 @@ footer img {
 .navbar-toggler:focus {
     border-color: none;
     color: white;
-} 
-
-.main-content-img {
-    width: auto;
-    height: 26em;
 }
 
-.check {
-    width: 2.25em;
-}
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #fff; 
+    overflow-x: hidden; 
+    padding-top: 2em; 
+    transition: 0.5s; 
+  }
 
-.news {
-    background-image: url(../images/NewsBG.png);
-    background-repeat:no-repeat;
-    background-position:center;
-    height: auto;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.works {
-    background-color: #b2d0ee;
-    padding-top: 1.5rem;
-    text-align: center;
-    width: 100%;
-}
-
-.works-img {
-    width: auto;
-    height: 8em;
-}
-
-.works h2 {
-    color: white;
-    
-}
-
-.works h3 {
-    color: #2278cf;
-}
-
-.works p {
+.sidenav a {
+    text-decoration: none;
     font-size: .9em;
-    width: 21em;
+    font-weight: 400;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    padding-top: none;
 }
 
-.grow {
-    text-align: center;
-    padding: 2rem 0;
-    min-height: none;
+.sidenav a:hover {
+    color: #000;
 }
 
-.grow-content p {
-    text-align: center;
-    font-weight: 500;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: red;
+    margin-left: 50px;
+    font-weight: 300;
 }
 
-.grow-content img {
-    width: auto;
-    height: 7.5em;
+.sidenav .closebtn:hover {
+    position: absolute;
+    color: red
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 1em;}
+.sidenav a {font-size: 1em;}
+}
+
+.navbar-sidenav {
+    padding-bottom: 21em;
 }
 
 .fixed-bg {
@@ -239,147 +214,7 @@ footer img {
     font-size: .9rem;
   }
 
-.services {
-    text-align: center;
-    background-color: #f7f7f9;
-}
-
-.services img {
-    width: auto;
-    height: 4em;
-}
-
-.services .card {
-    height: 100%;
-}
-
-.service-card h3 {
-    font-weight: 600;
-}
-
-.service-card .card-text {
-    font-size: .9em;
-}
-
-.rounded-circle {
-    width: auto;
-    height: 11em;
-}
-
-.carousel-caption {
-    position: relative;
-    left: 0;
-    top: 0;
-    color: black;
-}
-
-.carousel-caption .quote{
-    width: 65%;
-}
-
-.carousel-indicators li {
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: #2278cf;
-  }
-
-.reviews {
-    font-size: .90rem;
-}
-
-.reviews h2 {
-    font-size: 1.9rem;
-}
-
-.training {
-    background-color: #2a323c;
-    color: white;
-    padding: 0 0 1rem 0;
-}
-
-.training img {
-    width: auto;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.training h2, p {
-    padding: 0 0 1rem 0;
-}
-
-.training .btn {
-    font-size: .9em;
-}
-
-.footer-heading {
-    font-weight:800;
-    font-size: 1rem;
-    padding-bottom: 0;
-}
-
-.footer-white {
-    color: white;
-}
-
-.footer-content {
-    font-weight: 300;
-    font-size: 1.1em
-}
-
-.subscribe h3 {
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-.subscribe p {
-    font-size: .85em;
-    color: rgba(255,255,255, .5)
-}
-
-.list-unstyled li {
-    padding-bottom: 1em;
-    font-size: .90em;
-}
-
-.fine-print {
-    font-size: .75em;
-}
-
-.fine-print .btn {
-    font-size: 1.1em;
-}
-
-.fine-print .btn:hover {
-    color: white;
-}
-
-.form-control {
-    border-color: #bdbdbd;
-}
-
-.form-control:focus {
-    border-color: #fff;
-    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 1);
-}
-
-.form-control:hover {
-    border-color: #fff;
-    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 1);
-}
-
-::placeholder { 
-    color: white;
-    font-size: .75em;
-}
-
-::-ms-input-placeholder { 
-    color: white;
-    font-size: .75em;
-}
-
-.btn-ripple {
+  .btn-ripple {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
@@ -409,58 +244,6 @@ footer img {
 	transition: 0s;
 	transform: scale(0, 0);
 }
-
-.sidenav {
-    height: 100%;
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: #fff; 
-    overflow-x: hidden; 
-    padding-top: 2em; 
-    transition: 0.5s; 
-  }
-
-.sidenav a {
-    text-decoration: none;
-    font-size: .9em;
-    font-weight: 400;
-    color: #000;
-    display: block;
-    transition: 0.3s;
-    padding-top: none;
-}
-
-.sidenav a:hover {
-    olor: #000;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    color: red;
-    margin-left: 50px;
-    font-weight: 300;
-}
-
-.sidenav .closebtn:hover {
-    position: absolute;
-    color: red
-}
-
-@media screen and (max-height: 450px) {
-.sidenav {padding-top: 1em;}
-.sidenav a {font-size: 1em;}
-}
-
-.navbar-sidenav {
-    padding-bottom: 21em;
-}
-    
 
 
 
