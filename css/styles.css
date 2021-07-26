@@ -1,15 +1,14 @@
-.hero-section {
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/homeimage1fullsize.png);
-    background-repeat:no-repeat;
-    background-position:center;
-    width: 100%;
-    height: 27em;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body, header, footer {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .container-fluid {
@@ -22,7 +21,10 @@
 }
 
 .jumbotron {
-    color: white;
+    position: relative;
+    overflow: hidden;
+    background-color:black;
+    
 }
 
 .jumbotron h1 {
@@ -35,11 +37,227 @@
     font-size: 1.5rem;
 }
 
+.jumbotron video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width:100%;
+    height:100%;
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+    opacity:.5;
+}
+
+.jumbotron .container {
+    z-index: 2;
+    position: relative;
+}
+
+.row-content {
+    padding: 2rem 0;
+    min-height: 200px;
+}
+
+.row-content img {
+    padding: .6em;
+}
+
+.btn-ripple {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	transition: all ease-in-out .5s;
+}
+
+.btn-ripple::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 25%;
+	height: 100%;
+	width: 50%;
+	background-color: #fff;
+	border-radius: 50%;
+	opacity: 0;
+	pointer-events: none;
+	transition: all ease-in-out 1s;
+	transform: scale(5, 5);
+}
+
+.btn-ripple:active::after {
+	padding: 0;
+	margin: 0;
+	opacity: .2;
+	transition: 0s;
+	transform: scale(0, 0);
+}
+
+.hero-section {
+    margin: 0;
+    padding: 0;
+    /* background-image: url(../images/homeimage1fullsize.png); */
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 100%;
+    height: 35em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-logo {
+    width: 9.5em;
+    height: auto;
+    margin: 0 0 0 1.5em;
+}
+
 .nav a {
     color: white;
     font-size: .85rem;
     font-weight: 600;
 }
+
+.top-bar {
+    background-color: rgb(172, 0, 0);
+    color: white;
+    max-height: 2.5rem;
+    font-size: .85rem;
+}
+
+.top-bar .btn {
+    font-size: .80rem;
+}
+
+.dropdown a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar-toggler {
+    color: white;
+} 
+
+.navbar-toggler:focus {
+    border-color: none;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #fff; 
+    overflow-x: hidden; 
+    padding-top: 2em; 
+    transition: 0.5s; 
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 400;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    padding-top: none;
+}
+
+.sidenav a:hover {
+    color: #000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: red;
+    font-weight: 300;
+}
+
+.sidenav .closebtn:hover {
+    color: red;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 1em;}
+.sidenav a {font-size: 1em;}
+}
+
+.navbar-sidenav {
+    padding-bottom: 21em;
+}
+
+.about-section {
+    border-bottom: 1px solid white;
+}
+
+.services-section {
+    border-bottom: 1px solid white;
+}
+
+.services-section .card {
+    background-color: #343a40;
+}
+
+.services-section .card .btn {
+    background-color: rgb(172, 0, 0);
+    color: white;
+}
+
+.services-section .card .btn {
+    background-color: rgb(172, 0, 0);
+    color: white;
+}
+
+.services-section p {
+    height: 2em;
+    padding-bottom: 5em;
+}
+
+.frequency {
+    width: 9em;
+    height: auto
+}
+
+.fader {
+    width: 9em;
+    height: auto
+}
+
+.carousel .card {
+    min-height: 28.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-indicators li {
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+}
+
+.carousel-item {
+    padding-right: 0;
+}
+
+.main {
+    background-color:black;
+}
+
+
+
+
 
   
 
@@ -47,13 +265,7 @@ form input {
     padding-bottom: 2rem;
 } 
 
-a {
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: none;
-}
 
 footer {
     background-image: url("../images/FooterbackgroundImage.jpg");
@@ -103,107 +315,6 @@ footer img {
     color: black
 }
 
-.row-content {
-    padding: 0 !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-.row-content img {
-    padding: .6em;
-}
-
-.row-content-secondary {
-    text-align: center;
-}
-
-.hero-logo {
-    width: 9.5em;
-    height: auto;
-    margin: 0 0 0 1.5em;
-}
-
-.top-bar {
-    background-color: rgb(172, 0, 0);
-    color: white;
-    max-height: 2.5rem;
-    font-size: .85rem;
-}
-
-.top-bar .btn {
-    font-size: .80rem;
-}
-
-.dropdown a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-
-.navbar a:hover {
-    color: white;
-}
-
-.navbar-toggler {
-    color: white;
-} 
-
-.navbar-toggler:focus {
-    border-color: none;
-    color: white;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: #fff; 
-    overflow-x: hidden; 
-    padding-top: 2em; 
-    transition: 0.5s; 
-  }
-
-.sidenav a {
-    text-decoration: none;
-    font-size: .9em;
-    font-weight: 400;
-    color: #000;
-    display: block;
-    transition: 0.3s;
-    padding-top: none;
-}
-
-.sidenav a:hover {
-    color: #000;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    color: red;
-    margin-left: 50px;
-    font-weight: 300;
-}
-
-.sidenav .closebtn:hover {
-    position: absolute;
-    color: red
-}
-
-@media screen and (max-height: 450px) {
-.sidenav {padding-top: 1em;}
-.sidenav a {font-size: 1em;}
-}
-
-.navbar-sidenav {
-    padding-bottom: 21em;
-}
-
 .fixed-bg {
     background-image: url("../images/contentsection4bg.png");
     min-height: 300px;
@@ -214,36 +325,7 @@ footer img {
     font-size: .9rem;
   }
 
-  .btn-ripple {
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	transition: all ease-in-out .5s;
-}
 
-.btn-ripple::after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 25%;
-	height: 100%;
-	width: 50%;
-	background-color: #fff;
-	border-radius: 50%;
-	opacity: 0;
-	pointer-events: none;
-	transition: all ease-in-out 1s;
-	transform: scale(5, 5);
-}
-
-.btn-ripple:active::after {
-	padding: 0;
-	margin: 0;
-	opacity: .2;
-	transition: 0s;
-	transform: scale(0, 0);
-}
 
 
 
