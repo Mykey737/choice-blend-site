@@ -22,3 +22,7 @@ $("video source").each(function() {
 
 }
 window.onload = deferVideo;
+
+$('.carousel').carousel({
+  interval: 4000
+})
