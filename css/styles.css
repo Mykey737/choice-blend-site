@@ -315,11 +315,41 @@ footer .footer-content {
 }
 
 .tab-pane {
-    height: 42em;
+    height: 27em;
+}
+
+@media screen and (min-width: 576px) {
+    .tab-pane {
+      height: 40em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tab-pane {
+      height: 34em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tab-pane {
+      height: 38em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tab-pane {
+      height: 42em;
+    }
 }
 
 .carousel-item {
-    min-height: 15em;
+    min-height: 11em;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-item {
+        min-height: 15em;
+    }
 }
 
 .carousel-item img {
@@ -330,6 +360,10 @@ footer .footer-content {
 
 .carousel-indicators li { 
     visibility: hidden; 
+}
+
+.g-background-default {
+    background-color: rgb(36, 36, 36) !important;
 }
 
 
